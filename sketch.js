@@ -13,7 +13,7 @@ diametro = 50;
 nombreFuncion ();
 function setup() {
   //canvas (horizontal, vertical)
-  createCanvas(400,300);
+  createCanvas(1200,620);
   //background (red, green, blue)
   background(200, 0, 60);
   //Para ver donde hay un problema voy a la consola y ver en qué linea está el problema
@@ -28,7 +28,9 @@ diametro = 50
 function draw() {
     background(200, 0, 60);
     
-    estilo1 ();
+    quad (mouseX,mouseY,300,120,500,70,45,32,22,60);
+    strokeWeight(2);
+    fill (255,255,0)
     
   //ellipse (posX, posY, width, height)
   //dibuja una elipse
@@ -36,9 +38,8 @@ function draw() {
   //Si pongo mouseX, mouseY en la posición del círculo, el círculo sigue al mouse
   //Antes de hacer la figura defino su forma y borde (strokeWeight)
   //tamaño del borde
-  var diametro;
-diametro = 50
-  ellipse (mouseX,mouseY,diametro,diametro);
+  
+  triangle (400,800,300,400,600,500)
   diametro = diametro +1;
  
   function estilo1(){
